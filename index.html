@@ -6,73 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
 
-    <font face="Verdana">  
-    <header>
-        <h1 align="center">MEGANEKKO</h1>
-        <hr>
-    </header>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="contato.html">Contato</a>
-            </li>
-        </ul>
-    </nav>
-    <table>
-        <tr>
-            <td width=300>
-                <br>
-            </td>
-
-            <td width=750>
-                <div align="center">
-
-                    <p>
-                        Eu me chamo Jessica, sou formada em ADS e estou iniciando minha carreira como DEV <br>
-                        Eu gosto de rock, k-pop, jogos, animes, séries e doramas. <br>
-                        Minhas sagas preferidas são: Harry Potter, The Witcher e Game of Thrones. <br><br>
-                        Segue uma foto fofa da Hiichan:
-                    </p>
-
-                    <img src="assets/img/hiichan.jpg" alt="Foto do criador do conteúdo">
-
-                    <p> E um vídeo do grupo dela, o IZ*ONE: </p>
-
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eW-61oOanMw" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-
-
-                    <P>
-                        Não esqueçam de beber água!! 
-                    </P>
-                </div>
-            </td>
-        </tr>
-
-        <td>
-            <br>
-        </td>
-
-    </table>
-
-
-    <footer>
-        <div align="center">
-            <hr>
-            <p>By: Jessica Holanda </p>
+    <div id="root" class="grid-container">
+        <div class="item1 header">
+            <header>
+                <h1 align="center">MEGANEKKO</h1>
+            </header>
         </div>
-    </footer>
-</font>
+
+        <div id="menu" class="item2 item2-text-container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="item4 item4-box">
+            <img src="assets/img/logo.jpg" alt="Garota fofa">
+            <p>gryffindor, witcher, got, animes, games, k-pop, and honda hitome's biggest fan
+            </p>
+        </div>
+
+        <div class="item3">
+            <div class="item3-text-container container-box">
+                <p>
+                    나의 나의 마음을 take it or leave it
+                    집중해 더 내 맘이 더 시끄럽게 yeah
+                    나의 모든 걸 take it or leave it
+                    진심을 다 해 너를 다 보여줘 매일
+                    That's the sequence
+
+                </p>
+            </div>
+
+            <div class="image-container container-box">
+                <img src="assets/img/hiichan.jpg" alt="Foto do criador do conteúdo">
+            </div>
+
+            <div class="video-container container-box">
+                <p> Indicação de música: </p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eW-61oOanMw" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <div class="item5 footer">
+            <footer>
+                <p>Jessica Holanda </p>
+            </footer>
+        </div>
+
+    </div>
+
+
 </body>
 
 </html>

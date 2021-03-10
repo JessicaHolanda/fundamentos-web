@@ -6,68 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <font face="Verdana">
-        <header>
-            <h1 align="center">MEGANEKKO</h1>
-            <hr>
-        </header>
+    <div id="root" class="grid-container">
+        <div class="item1 header">
+            <header>
+                <h1 align="center">MEGANEKKO</h1>
+            </header>
+        </div>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
-            </ul>
-        </nav>
-
-        <table>
-            <tr>
-
-                <td width=200>
-
-                </td>
-
-                <td width=500>
-                    <img src="assets/img/yui.jpg" width=330 alt="Foto do criador do conteúdo">
+        <div id="menu" class="item2 item2-text-container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
 
-                </td>
+        <div class="item3">
+           
+            <h2>Entre em contato comigo</h2>
 
-                <td>
-                    <h2>Entre em contato comigo</h2>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome">
+                <br>
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email">
+                <br>
+                <br>
+                <label for="assunto">Assunto:</label><br>
+                <textarea name="asunto" id="assunto" cols="30" rows="6"></textarea>
+                <br>
+                <br>
+                <button>Enviar</button>
+            </form>
 
-                    <form>
-                        <label for="nome">Nome:</label><br>
-                        <input type="text" id="nome">
-                        <br>
-                        <br>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email">
-                        <br>
-                        <br>
-                        <label for="assunto">Assunto:</label><br>
-                        <textarea name="asunto" id="assunto" cols="30" rows="6"></textarea>
-                        <br>
-                        <br>
-                        <button>Enviar</button>
-                    </form>
+            <br><br><br>
 
-                </td>
 
-            </tr>
-        </table>
-
-        <br><br><br>
-        <hr>
-        <div align="center">
             <h2>Endereço</h2>
             <p>Japão - Liberdade</p>
             <p>São Paulo - SP</p>
@@ -79,13 +70,12 @@
             <br><br><br>
 
         </div>
-        <footer>
-            <div align="center">
-                <hr>
-                <p>By: Jessica Holanda </p>
-            </div>
-        </footer>
-    </font>
+        <div class="item5 footer">
+            <footer>
+                    <p>Jessica Holanda </p>
+            </footer>
+        </div>
+    </div>
 </body>
 
 </html>
