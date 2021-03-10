@@ -1,0 +1,221 @@
+:root{
+    font-size: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ocupa o tamanho total da página */
+html, body, #root {
+    height: 100vh;
+}
+
+body {
+    background: #eeeeee;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 400 1.6rem Poppins;
+}
+
+
+.header{
+    background-color: #FFFFFF !important;
+    font-size: 2em;
+    line-height: 27px;
+    position: fixed;
+    min-height: 50px;
+    width: 100%;
+    z-index: 90;
+    opacity: .9;
+    text-transform: uppercase;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    transition: all .3s linear;
+    letter-spacing: 15px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+ }
+ 
+ #menu li a:hover {
+    color: grey;
+ }
+
+
+/* em dispositivos com uma largura de no minimo 700px aumenta um pouco o fontsize
+62.5  = 1 rem = 10px*/
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: teste; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu teste main main main main'
+    'footer footer footer footer footer footer';
+  grid-gap: 2px;
+  background-color: #eeeeee;;
+  /*padding: 10px;*/
+  height: 100vh;
+}
+
+
+.grid-container .item2{
+    margin-left: 50px !important;
+    position: fixed;
+
+}
+
+.grid-container .item3 > p{
+  width:90%;
+  margin: auto;
+  text-align: justify;
+}
+
+.item2-text-container{
+    background: #eeeeee;
+    width: 100px;
+    height: 100%;
+   /* position: fixed;*/
+    /*background-color: (255,255,255,0);*/
+   /* background-size: cover;*/
+   /* margin-left: 40;*/
+    padding: 14px;
+    margin-top: 60px;
+   /* font-size: 13px;*/
+    /*line-height: 15px;*/
+    /*font-family: arial;
+    /*padding-top: 200px;
+    /*overflow: hidden;*/
+    /*border-right: solid 4px #bbb;*/
+    text-align: justify;
+   /* opacity: 1;
+    -webkit-transition: all .8s linear;
+    -moz-transition: all .8s linear;
+    transition: all .8s linear;*/
+}
+
+.item3-text-container{
+  display: flex;
+  justify-content: center;
+}
+
+.image-container{
+  text-align: center;
+  max-width: 300px;
+  width: auto;
+  height: auto;
+}
+
+.video-container{
+    text-align:center;
+}
+
+.item3{
+    margin-top: 50px;
+}
+
+.grid-container > div {
+    background: #eeeeee;
+  /*text-align: center;*/
+  align-items: center;
+  padding: 20px 0;
+
+}
+
+.container-box {
+	max-width: 550px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+    padding: 2rem;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+    border: solid 6px #FFFFFF;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-top: 14px;
+    z-index: 10;
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.container-box > img{
+    height: auto;
+    max-width: 100%;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   /* max-width: 455px;*/
+    width: auto;
+    height: auto;
+    text-align:center;
+    align-items: center;
+    border:0;
+}
+
+.item4-box{
+    border: solid 6px #FFFFFF;
+    position: fixed;
+    max-width: 128px;
+    text-align: left;
+    background-color: #ffffff !important;
+    top: 90px;
+    left: 15%;
+    padding: 0px !important;
+    font-family: 'courier new';
+    letter-spacing: 2px;
+   /* z-index: 99;*/
+}
+
+.item4-box > img{
+    height: auto;
+    max-width: 100%;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   /* max-width: 455px;*/
+    width: auto;
+    height: auto;
+    text-align:center;
+    align-items: center;
+   /* border:0;*/
+}
+
+.footer{
+    
+    font-size: 1.6rem;
+    line-height: 27px;
+    min-height: 50px;
+    letter-spacing: 15px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: #eeeeee;
+    /*border: 1px solid #ccc;*/
+    z-index: 10;
+    box-shadow: 1px 1px 5px #ccc;
+}
