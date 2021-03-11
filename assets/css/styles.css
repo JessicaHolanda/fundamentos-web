@@ -55,8 +55,6 @@ textarea {
  }
 
 
-/* em dispositivos com uma largura de no minimo 700px aumenta um pouco o fontsize
-62.5  = 1 rem = 10px*/
 @media (min-width: 700px) {
     :root {
         font-size: 62.5%;
@@ -76,7 +74,7 @@ textarea {
     'menu teste main main main main'
     'footer footer footer footer footer footer';
   grid-gap: 2px;
-  background-color: #eeeeee;;
+  background-color: #eeeeee;
   /*padding: 10px;*/
   height: 100vh;
 }
@@ -85,7 +83,6 @@ textarea {
 .grid-container .item2{
     margin-left: 50px !important;
     position: fixed;
-
 }
 
 .grid-container .item3 > p{
@@ -219,3 +216,50 @@ textarea {
     z-index: 10;
     box-shadow: 1px 1px 5px #ccc;
 }
+
+
+/* CSS Especifico da pagina Contato   */
+
+.container-box-contato {
+	max-width: 640px;
+	margin: 0 auto;
+	display: block;
+	border: 1px solid #ccc;
+    padding: 2rem;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+    border: solid 6px #FFFFFF;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-top: 14px;
+    z-index: 10;
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.btn-container{
+    text-align: center;
+}
+
+.button {
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    height: 45px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-content: center;
+    justify-content: center;
+}
+
+.item3-text-container > h3, p {
+    display: flex;
+    justify-content: center;
+  } 
+
+ .mapa-container {
+    text-align: center;
+ }
