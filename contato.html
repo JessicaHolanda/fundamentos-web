@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -15,8 +15,9 @@
 
 <body>
 
+
     <div id="root" class="grid-container">
-        <div class="item1 header">
+        <div class="itemForm1 header">
             <header>
                 <h1 align="center">MEGANEKKO</h1>
             </header>
@@ -35,47 +36,55 @@
             </nav>
         </div>
 
+        <div class="item4 item4-box">
+            <img src="assets/img/logo.jpg" alt="Garota fofa">
+            <p>gryffindor, witcher, got, animes, games, k-pop, and honda hitome's biggest fan
+            </p>
+        </div>
 
         <div class="item3">
-           
-            <h2>Entre em contato comigo</h2>
+            <div class="item3-text-container container-box-contato">
+                <h3>Entre em contato comigo</h3>
+                <form>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" onkeyup="validaNome()">
+                    <div id='txtNome'></div>
+                    <br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" onkeyup='validaEmail()'>
+                    <div id='txtEmail'></div>
+                    <br>
+                    <label for="assunto">Assunto:</label><br>
+                    <textarea name="asunto" id="assunto" cols="30" rows="6" onkeyup="validaAssunto()"></textarea>
+                    <div id='txtAssunto'></div>
+                    <br>
+                    <div class="btn-container">
+                        <button class="button" onclick="enviar()">Enviar</button>
+                    </div>
+                </form>
+                <br><br>
+                <h3>Endereço</h3>
+                <p>Japão - Liberdade</p>
+                <p>São Paulo - SP</p>
 
-            <form>
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome">
-                <br>
-                <br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email">
-                <br>
-                <br>
-                <label for="assunto">Assunto:</label><br>
-                <textarea name="asunto" id="assunto" cols="30" rows="6"></textarea>
-                <br>
-                <br>
-                <button>Enviar</button>
-            </form>
-
-            <br><br><br>
-
-
-            <h2>Endereço</h2>
-            <p>Japão - Liberdade</p>
-            <p>São Paulo - SP</p>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3660830362405!2d-46.6378308853841!3d-23.555292067252413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a93e375647%3A0x1c6bd73cda3c9095!2sJap%C3%A3o%20-%20Liberdade!5e0!3m2!1spt-BR!2sbr!4v1615300165076!5m2!1spt-BR!2sbr"
-                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-            <br><br><br>
-
+                <div class="mapa-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3660830362405!2d-46.6378308853841!3d-23.555292067252413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a93e375647%3A0x1c6bd73cda3c9095!2sJap%C3%A3o%20-%20Liberdade!5e0!3m2!1spt-BR!2sbr!4v1615300165076!5m2!1spt-BR!2sbr"
+                        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+                </div>
+            </div>
         </div>
+
+
         <div class="item5 footer">
             <footer>
-                    <p>Jessica Holanda </p>
+                <p>Jessica Holanda &copy</p>
             </footer>
         </div>
     </div>
+
+    <script src="./assets/js/scripts.js"></script>
 </body>
 
 </html>
